@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newTaskContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newTaskContainer > input{
+    border-radius: 4px;
+    padding: 10px;
+    height: 10px;
+}
+
+
+.newTaskContainer > button{
+    margin-left: 10px;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid  black ;
+}
+
+.newTaskContainer > button:hover{
+    border: none;
+    color: white;
+    
+    background-color: black;
+}
