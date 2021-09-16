@@ -18,8 +18,10 @@ export default class TodoComponent extends Component {
         this.setState({
           pendingTasks: [
             ...this.state.pendingTasks,
-            { value: task, id: ++this.state.count },
+            { value: task, id: this.state.count + 1 },
           ],
+          count: this.state.count + 1
+          
         });
         break;
       }
