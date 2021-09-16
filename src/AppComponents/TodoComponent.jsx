@@ -82,7 +82,12 @@ export default class TodoComponent extends Component {
 
         {this.state.pendingTasks.length > 0 && (
           <>
-            <h3 className="pendingTasks">Pending Tasks</h3>
+            <h3 className="pendingTasks">
+              Pending Tasks
+              
+              ({this.state.pendingTasks.length })
+            
+            </h3>
             <TasksComponent
               type="pending"
               done={(task) => this.updateTasks(task, "completed")}
@@ -94,7 +99,9 @@ export default class TodoComponent extends Component {
 
         {this.state.completedTasks.length > 0 && (
           <>
-            <h3 className="completedTasks">Completed Tasks</h3>
+            <h3 className="completedTasks">Completed Tasks
+            ({this.state.completedTasks.length })
+            </h3>
             <TasksComponent
               type="completed"
               undo={(task) => this.updateTasks(task, "undo")}

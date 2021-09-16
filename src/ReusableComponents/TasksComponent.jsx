@@ -9,12 +9,12 @@ export default class TasksComponent extends Component {
             <span className={this.props.type} >{task.value}</span>
             {this.props.type === "pending" ? (
               <div className="buttonsSection">
-                <button onClick={() => this.props.done(task)}>✓</button>
-                <button onClick={() => this.props.remove(task)}>✗</button>
+                <button title="Mark Completed" onClick={() => this.props.done(task)}>✓</button>
+                <button title="Delete Task" onClick={() => this.props.remove(task)}>✗</button>
                 </div>
             ):
             <div className="buttonsSection">
-            <button onClick={() => this.props.undo(task)}>⤹</button>
+            <button title="Mark Pending" onClick={() => this.props.undo(task)}>⤹</button>
             
             </div>}
           </li>
